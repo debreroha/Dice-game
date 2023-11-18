@@ -28,6 +28,7 @@ const init = function () {
   score0El.textContent = 0;
   score1El.textContent = 0;
 
+  // issue of class list
   diceEl.classList.add('hidden');
   player0El.classList.remove('player--winner');
   player1El.classList.remove('player--winner');
@@ -46,7 +47,7 @@ const switchPlayer = function () {
 
 // rolling dice functionality
 btnRoll.addEventListener('click', function () {
-  // 1. generating a random dice roll
+  // 1. generating a random dice rolls
   if (playing) {
     const dice = Math.trunc(Math.random() * 6) + 1;
     console.log(dice);
